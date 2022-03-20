@@ -1,0 +1,296 @@
+Primeros Ejercicios con CSS
+
+<html>
+<head>
+<style>
+p {
+  color; red 
+  text-align; center;
+} 
+</style>
+</head>
+<body>
+
+<p> Hola mundo! </p>
+<p>Este párrafo esta con estilos CSS. </p>
+
+</body>
+ <html>
+<head>
+<style>
+body { background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Mi primer ejemplo de CSS</h1>
+<p>Este es el parrafo.</p>
+
+</body>
+ <html>
+<head>
+<style>
+p {
+  text-align: center;
+  color: red;
+} 
+</style>
+</head>
+<body>
+
+<p>Todo el párrafo será afectado por el estilo. </p>
+<p id="para1">Acá tambien!</p>
+<p>Y acá!</p>
+
+</body>
+ <html>
+<head>
+<style>
+#para1 {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<p id="para1">Hola Mundo!</p>
+<p>Este párrafo no contiene efectos de estilo.</p>
+
+</body>
+<html>
+<head>
+<style>
+.center {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Rojo y alineación centrado de encabezado</h1>
+<p class="center">Rojo y alineación centrado del párrafo.</p> 
+
+</body>
+</html>
+<head>
+<style>
+p.center {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Este encabezado no tendrá efectos</h1>
+<p class="center">Este párrafo será rojo y alineación centrada. </p> 
+
+</body>
+</html>
+<head>
+<style>
+p.center {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Este encabezdo no tendrá efectos de stilos</h1>
+<p class="center">Este párrafo será rojo y alineación centrado.</p>
+<p class="center large"> Este párrafo será rojo, alineación centrado y tamaño de texto Large.</p> 
+
+</body>
+</html>
+
+Ejercicios varios en clase
+
+Pregunta
+ los h1 estilo fondo negro, letra roja
+ pero un h1 ademas tenga un texto de 300px
+
+ Respuesta
+
+ <html>
+<head>
+<style>
+h1.fondo {
+  background-color: black;  color: red;
+}
+
+h1.large {
+  font-size: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="fondo">Este encabezdo tiene fondo negro y letras rojas</h1>
+<h1 class="fondo large">Este encabezado tiene fondo negro, letras rojas y tamaño de 300 pixeles .</h1>
+ 
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+* {
+  text-align: center;
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Hola Mundo!</h1>
+
+<p>Todos los elementos de la página tendrán efectos del estilo.</p>
+<p id="para1">Acá también!</p>
+<p>Y Acá!</p>
+
+</body>
+</html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+<h1>Esto es un encabezado</h1>
+<p>Esto es un párrafo<p>
+
+</body>
+
+
+</html>
+ body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+Ejercicio con fondo, letra y h1
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+p {
+  background-color: green;
+  text-align: center;
+}
+
+
+<html>
+<body>
+
+<h1 style="background-color:DodgerBlue;">Hola Mundo</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+</body>
+</html>
+
+ <html>
+<body>
+
+<h3 style="color:Tomato;">Hola Mundo</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+</body>
+</html>
+
+
+<html>
+<body>
+
+<p> Igual que el nombre de color "Tomate":</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+<p> Además de los nombres de color predefinidos, los colores se pueden especificar con RGB, HEX, HSL o incluso colores transparentes con valores de color RGBA o HSLA.</p>
+</body>
+</html>
+
+Ejercicios con div 
+
+<html>
+<head>
+<style>
+div {
+  background-color: #4CAF50;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h1>Caja Transparente</h1>
+<p>Cuando se usa la propiedad de opacidad para agregar transparencia al fondo de un elemento, todos sus elementos secundarios también se vuelven transparentes. Esto puede hacer que el texto dentro de un elemento totalmente transparente sea difícil de leer.:</p>
+
+<div class="first">
+  <h1>opacity 0.1</h1>
+</div>
+
+<div class="second">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,629 @@
+ <html>
+<head>
+<style>
+body {
+  background-image: url("Logo.png");
+}
+</style>
+</head>
+<body>
+
+<h1>Hola MUndo!</h1>
+
+<p>Esta página tiene una imagen de fondo!</p>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+body {
+  background-image: url("Logo.png");
+  background-repeat: repeat-x;
+}
+</style>
+</head>
+<body>
+
+<h1>Hola Mundo!</h1>
+<p>Acá, una imagen de fondo se repetirá solo horizontalmetne!</p>
+
+</body>
+</html>
+ no-repeat
+ background-position: right top;
+  margin-right: 200px;
+
+  <html>
+<head>
+<style>
+body {
+  background-image: url("Logo.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+  /* background-attachment: scroll;*/
+}
+</style>
+</head>
+<body>
+
+<h1> La propiedad de fondo adjunto </h1>
+
+<p> La propiedad de fondo adjunto especifica si la imagen de fondo debe desplazarse o ser fija (no se desplazará con el resto de la página).</p>
+<p><strong>Tip:</strong> Si no ve ninguna barra de desplazamiento, intente cambiar el tamaño de la ventana del navegador.</p>
+
+<p>La imagen de fondo es fija. Intenta desplazarte hacia abajo en la página.</p>
+<p>La imagen de fondo es fija. Intenta desplazarte hacia abajo en la página.</p>
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+</head>
+<body>
+
+<h2> La propiedad de estilo de borde </h2>
+<p> Esta propiedad especifica qué tipo de borde mostrar:</p>
+<p class="dotted">Borde punteado.</p>
+<p class="dashed">Borde rayado.</p>
+<p class="solid">Borde sólida.</p>
+<p class="double">Borde doble.</p>
+<p class="groove">Borde ranura.</p>
+<p class="ridge">Borde cresta.</p>
+<p class="inset">Borde recuadro.</p>
+<p class="outset">Borde comienzo.</p>
+<p class="none">Sin borde.</p>
+<p class="hidden">Borde oculto.</p>
+<p class="mix">Borde mezclada.</p>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-width Property</h2>
+<p>This property specifies the width of the four borders:</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+<p class="four">Some text.</p>
+<p class="five">Some text.</p>
+<p class="six">Some text.</p>
+
+<p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+Always specify the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}
+</style>
+</head>
+<body>
+
+<h2>The border-width Property</h2>
+<p>The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+} 
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+} 
+</style>
+</head>
+<body>
+
+<h2>The border-color Property</h2>
+<p>This property specifies the color of the four borders:</p>
+
+<p class="one">A solid red border</p>
+<p class="two">A solid green border</p>
+<p class="three">A dotted blue border</p>
+
+<p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+</style>
+</head>
+<body>
+
+<h2>The border-color Property</h2>
+<p>The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+
+<p class="one">A solid multicolor border</p>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p>2 different border styles.</p>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+p {
+  border-style: dotted solid;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p>2 different border styles.</p>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+p {
+  border: 5px solid red;
+}
+</style>
+</head>
+<body>
+
+<h2>The border Property</h2>
+
+<p>This property is a shorthand property for border-width, border-style, and border-color.</p>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+p {
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-left Property</h2>
+<p>This property is a shorthand property for border-left-width, border-left-style, and border-left-color.</p>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+p.normal {
+  border: 2px solid red;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-radius Property</h2>
+<p>This property is used to add rounded borders to an element:</p>
+
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+p {border-style: solid;}
+p.none {border-bottom-style: none;}
+p.dotted {border-bottom-style: dotted;}
+p.dashed {border-bottom-style: dashed;}
+p.solid {border-bottom-style: solid;}
+p.double {border-bottom-style: double;}
+p.groove {border-bottom-style: groove;}
+p.ridge {border-bottom-style: ridge;}
+p.inset {border-bottom-style: inset;}
+p.outset {border-bottom-style: outset;}
+</style>
+</head>
+<body>
+
+<p class="none">No bottom border.</p>
+<p class="dotted">A dotted bottom border.</p>
+<p class="dashed">A dashed bottom border.</p>
+<p class="solid">A solid bottom border.</p>
+<p class="double">A double bottom border.</p>
+<p class="groove">A groove bottom border.</p>
+<p class="ridge">A ridge bottom border.</p>
+<p class="inset">An inset bottom border.</p>
+<p class="outset">An outset bottom border.</p>
+
+</body>
+</html>
+
+Ejercicios
+
+
+<html>
+<head>
+<style>
+p {
+  border-style: solid;
+  border-left-width: 15px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> The "border-left-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
+
+Respuesta
+
+<html>
+<head>
+<style>
+p {
+  border-style: dotted;
+  border-left-width: 15px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> The "border-left-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+
+Ejercicios Varios
+
+1) 
+Establezca un borde "4px", "punteado" para <p>.
+Sugerencia: use las propiedades de estilo de borde y ancho de borde.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta:
+
+<html>
+<head>
+<style>
+p {
+  border-style: dotted;
+  border-width: 4px;
+}
+</style>
+</head>
+<body>
+
+<p>Note: The "border-left-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+</body>
+</html>
+
+
+2)
+Establezca el color del borde para <p> en "rojo"
+Sugerencia: utilice la propiedad de color del borde.
+
+Respuesta
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border-style: dotted;
+  border-width: 4px;
+  border-color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>Esto es un encabezado</h1>
+<p>Esto es el párrafo.</p>
+</body>
+</html>
+
+
+3) 
+Cambie las 3 propiedades del borde, de modo que solo muestren el borde en la parte superior.
+Sugerencia: use la propiedad border-top-style, etc.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border-style: dotted;
+  border-width: 4px;
+  border-color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>Esto es un encabezado</h1>
+<p>Esto es el párrafo.</p>
+
+</body>
+</html>
+
+Respuesta
+
+<html>
+<head>
+<style>
+p {
+ border-style: dotted;
+  border-width: 4px;
+
+  border-top-color: blue
+
+}
+</style>
+</head>
+<body>
+
+4)
+Con la propiedad de borde: establezca el borde para p en ""sólido10px", " y "verde".
+Sugerencia: la propiedad de borde contiene:
+ancho de borde estilo de borde color de borde
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+<h1>Esto es un encabezado</h1>
+<p>Esto es el párrafo.</p>
+
+</body>
+</html>
+
+Respuesta
+
+<html>
+<head>
+<style>
+p {
+ border-style: solid;
+  border-width: 10px;
+  border-color: green
+
+}
+</style>
+</head>
+<body>
+
+
+Ejercicios
+
+
+<html>
+<head>
+<style>
+div {
+  margin: 70px;
+  border: 1px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div>This element has a margin of 70px.</div>
+
+</body>
+</html>
+
+
+ <html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual margin properties</h2>
+
+<div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+div {
+  width:300px;
+  margin: auto;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<h2>Use of margin:auto</h2>
+<p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+
+<div>
+This div will be horizontally centered because it has margin: auto;
+</div>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+</style>
+</head>
+<body>
+
+<h2>Use of the inherit value</h2>
+<p>Let the left margin be inherited from the parent element:</p>
+
+<div>
+<p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,569 @@
+<html>
+<head>
+<style>
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+</style>
+</head>
+<body>
+
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. Then, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+</body>
+</html>
+
+Ejercicios
+
+1)
+Establezca el margen izquierdo de <h1> en "20px".
+Sugerencia: utilice la propiedad margen izquierda.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta
+
+<html>
+<head>
+<style>
+h1 {
+  background-color: lightblue;
+    margin-left: : 20px;
+}
+</style>
+</head>
+<body>
+
+
+2)
+Establezca todos los márgenes para <h1> en "25px".
+Sugerencia: use la propiedad de margen.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta
+<html>
+<head>
+<style>
+h1 {
+ 
+  background-color: lightblue;
+margin: 25px
+
+}
+</style>
+</head>
+<body>
+
+
+3)
+Use la propiedad de margen para establecer los márgenes superior e inferior para <h1> en "50px", y los márgenes izquierdo y derecho en "25px".
+Sugerencia: la propiedad de margen puede tener de uno a cuatro valores.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta:
+
+<html>
+<head>
+<style>
+h1 {
+ 
+  background-color: lightblue;
+margin: 50px
+margin-left:25px;
+margin-right: 25px 
+
+}
+</style>
+</head>
+<body>
+
+4)
+Use la propiedad de margen para alinear al centro el elemento <h1>.
+Sugerencia: use auto.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  background-color: lightblue;
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta
+
+html>
+<html>
+<head>
+<style>
+h1 {
+  background-color: lightblue;
+  width: 300px;
+  margin: auto
+  border: 1px solid red
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+
+Contenido
+
+
+<html>
+<head>
+<style>
+div {
+  padding: 70px;
+  border: 1px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div>This element has a padding of 70px.</div>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual padding properties</h2>
+
+<div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+div.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Padding and element width</h2>
+
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+div.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Padding and element width - with box-sizing</h2>
+
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+</div>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+p.padding {
+  padding-left: 2cm;
+}
+p.padding2 {
+  padding-left: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-left Property</h1>
+
+<p>This is a text with no left padding.</p>
+<p class="padding">This text has a left padding of 2 cm.</p>
+<p class="padding2">This text has a left padding of 50%.</p>
+
+</body>
+</html>
+
+Ejercicios
+
+1)
+Establezca el relleno superior de <p> en "30px".
+Sugerencia: use la propiedad padding-top.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta
+
+p {
+    padding-top: 30px;
+    background-color: lightblue;
+  }
+
+  2)
+Establezca todos los rellenos para <p> en "50px".
+Sugerencia: use la propiedad de relleno.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta
+p {
+    background-color: lightblue;
+    padding: 50px
+  }
+
+
+3)
+
+Use la propiedad de relleno para establecer los rellenos superior e inferior para <p> en "25px", y los rellenos izquierdo y derecho en "50px".
+Sugerencia: la propiedad de relleno puede tener de uno a cuatro valores.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Respuesta
+
+p {
+    background-color: lightblue;
+padding: 25px 50px;  
+}
+
+
+Contenido
+
+<html>
+<head>
+<style>
+div {
+  width: 100%;
+  border: 1px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div>This element has a width of 100%.</div>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the height and width of an element</h2>
+
+<p>This div element has a height of 200px and a width of 50%:</p>
+
+<div></div>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+div {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the height and width of an element</h2>
+
+<p>This div element has a height of 100px and a width of 500px:</p>
+
+<div></div>
+
+</body>
+</html>
+
+ <html>
+<head>
+<style>
+div {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the max-width of an element</h2>
+<p>This div element has a height of 100px and a max-width of 500px:</p>
+
+<div></div>
+
+<p>Resize the browser window to see the effect.</p>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+img.one {
+  height: auto;
+}
+
+img.two {
+  height: 200px;
+  width: 200px;
+}
+
+div.three {
+  height: 300px;
+  width: 300px;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body bgcolor="blach">
+
+<h2>Set the height and width of elements</h2>
+
+<p>Original image:</p>
+<img class="one" src="imagen2.jpg" ><br>
+
+<p>Sized image (200x200 pixels):</p>
+<img class="two" src="imagen2.jpg" ><br>
+
+<p>The height and width of this div element is 300px:</p>
+<div class="three"></div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+}
+
+img.one {
+  height: auto;
+  width: auto;
+}
+
+img.two {
+  height: 50%;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the height and width in %</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<p>Original image:</p>
+<img class="one" src="imagen.jpg" ><br>
+
+<p>Sized image (in %):</p>
+<img class="two" src="imagen.jpg" >
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+div {
+  max-width: 400px;
+  min-width: 100px;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the max-width and min-width of an element</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div>This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+div {
+  max-height: 600px;
+  min-height: 400px;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the max-height and min-height of an element</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div>This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.</div>
+
+</body>
+</html>
